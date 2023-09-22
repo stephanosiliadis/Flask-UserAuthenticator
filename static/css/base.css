@@ -1,0 +1,15 @@
+@import url("https://fonts.googleapis.com/css2?family=Mooli&display=swap");
+
+body {
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  background-color: aliceblue;
+  font-family: "Mooli", sans-serif;
+}
+
+img {
+  width: 25%;
+  height: 100%;
+}

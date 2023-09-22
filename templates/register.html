@@ -1,0 +1,61 @@
+{% extends "base.html" %}
+
+{% block title %}
+    Registration Page
+{% endblock %}
+
+{% block content %}
+    <div class="container h-100">
+        <div class="row align-items-center justify-content-center h-100">
+            <div class="col-6">
+                <div class="text-center">
+                    <h3 class="heading"><u>Create an Account</u></h3>
+                </div>
+
+                <form method="post" action="/register" class="mt-5">
+                    <div class="form-group">
+                        <input 
+                            type="text"
+                            placeholder="Enter your username"
+                            name="username"
+                            class="form-control"
+                            required
+                        />
+                    </div>
+                    <div class="form-group">
+                        <input 
+                            type="email"
+                            placeholder="Enter your email"
+                            name="email"
+                            class="form-control"
+                            required
+                        />
+                    </div>
+                    <div class="form-group">
+                        <input 
+                            type="password"
+                            placeholder="Enter your password"
+                            name="password"
+                            class="form-control"
+                            required
+                        />
+                    </div>
+                    <div class="form-group">
+                        <input 
+                            type="submit" 
+                            value="Register" 
+                            class="btn btn-primary"
+                        />
+                    </div>
+                </form>
+
+                <div class="text-center mt-4">
+                    <p>
+                        Already have an account? Login
+                        <a href="/login">here!</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
